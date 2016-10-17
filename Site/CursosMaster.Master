@@ -1,0 +1,147 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CursosMaster.master.cs" Inherits="Site.Page.CursosMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Curso Master Page</title>
+     <link type ="text/css"rel="stylesheet" href="Content/bootstrap.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 599px;
+        }
+        .auto-style7 {
+            height: 722px;
+            width: 148px;
+             vertical-align:top;
+        }
+        .auto-style8 {
+            height: 85px;
+            width: 148px;
+             vertical-align:top;
+        }
+        .auto-style10 {
+            height: 722px;
+            width: 781px;
+             vertical-align:top;
+        }
+        .auto-style11 {
+            height: 85px;
+            width: 781px;
+        }
+        .auto-style12 {
+            height: 122px;
+        }
+        .auto-style13 {
+            height: 722px;
+            width: 139px;
+        }
+        .auto-style14 {
+            height: 85px;
+            width: 139px;
+           
+        }
+        .auto-style15 {
+            text-align: center;
+            height: 66px;
+            width: 769px;
+            margin-top: 0px;
+        }
+    </style>
+</head>
+     <script src = " Scripts/jquery-1.9.1.min.js"><</script>
+    <script src ="Scripts/bootstrep.mim.js"></script>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table cellpadding="0" cellspacing="0" class="auto-style1">
+            <tr>
+                <td class="auto-style12" colspan="3" dir="auto" lang="aa" style="background-position: center top; background-image: url('/Imagens/cursos.png'); background-repeat: no-repeat;">
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                     <nav class="navbar  navbar" style="text-align: center">
+                    <asp:Button ID="btnHome" runat="server"  CssClass="btn-danger" Text="Home" PostBackUrl="~/Default.aspx" />
+                    <asp:Button ID="btnBcc" runat="server" CssClass="btn-danger" Text="Ciencias da Computação" PostBackUrl="~/Page/Bcc.aspx" />
+                    <br />
+                    <br />
+                </nav>
+                         </td>
+
+            </tr>
+            <tr>
+                <td class="auto-style7">
+            <strong>
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Page/CursosMaster.Master">Video sobre Ciencias da computação</asp:HyperLink>
+                    <br />
+                    <br />
+                    <br />
+                    <asp:HyperLink ID="HyperLink2" runat="server">Como anda o mercado na area </asp:HyperLink>
+                    <br />
+                    <br />
+                    <br />
+                    <asp:HyperLink ID="HyperLink3" runat="server">Evento na area de TI</asp:HyperLink>
+            </strong>
+                </td>
+                <td class="auto-style10">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+            <p>
+                <br />
+            </p>
+            <strong>
+            <p class="auto-style15">
+                Ciencias da Computação</p>
+            <asp:Panel ID="Panel2" runat="server" Height="472px">
+                <strong><b style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+                <asp:Image ID="Image3" runat="server" ImageUrl="~/Imagens/bcc.PNG" Height="441px" Width="516px" />
+                </b></strong>
+            </asp:Panel>
+            </strong>
+            <p>
+                <strong>
+
+
+            <p class="auto-style15">
+                Ciencias da Computação</p>
+              <asp:Panel ID="Panel3" runat="server" Height="261px" Width="771px">
+                <strong><b style="color: rgb(34, 34, 34); font-family: arial, sans-serif; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255);">
+               <panel>  <iframe width="560" height="315" src="https://www.youtube.com/embed/e0mqSm6XKrI" frameborder="0" allowfullscreen></iframe></panel>
+                </b></strong>
+            </asp:Panel>
+            </strong>
+            <p>
+            </p>
+        
+          
+          
+
+          
+
+            <p>
+            </strong>
+            </p>
+        
+        </asp:ContentPlaceHolder>
+                </td>
+                <td class="auto-style13"></td>
+            </tr>
+            <tr>
+                <td class="auto-style8"></td>
+                <td class="auto-style11"></td>
+                <td class="auto-style14"></td>
+            </tr>
+        </table>
+        <br />
+    </div>
+    </form>
+</body>
+</html>
