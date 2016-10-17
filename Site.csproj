@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FF28F177-9101-4C4E-897C-C4B1B3917957}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Site</RootNamespace>
+    <AssemblyName>Site</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\dados.mdf" />
+    <Content Include="App_Data\dados_log.ldf">
+      <DependentUpon>dados.mdf</DependentUpon>
+    </Content>
+    <Content Include="Cadastrar.aspx" />
+    <Content Include="Content\Custom-Cs.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Imagens\cadastro.jpg" />
+    <Content Include="Imagens\editar.png" />
+    <Content Include="Imagens\inserir.jpg" />
+    <Content Include="Imagens\logar.jpg" />
+    <Content Include="Imagens\remover.jpg" />
+    <Content Include="Imagens\remover.png" />
+    <Content Include="Imagens\selecionar.jpg" />
+    <Content Include="Page\Tiaspx.aspx" />
+    <Content Include="Testando\Inicio.aspx" />
+    <Content Include="Testando\Login.aspx" />
+    <Content Include="Imagens\x.png" />
+    <Content Include="Page\Cadastro.aspx" />
+    <Content Include="Imagens\ads.PNG" />
+    <Content Include="Imagens\bcc.PNG" />
+    <Content Include="Imagens\curso.png" />
+    <Content Include="Imagens\cursos.png" />
+    <Content Include="Imagens\Fun.png" />
+    <Content Include="Imagens\img_servpublico.png" />
+    <Content Include="Imagens\leg.jpg" />
+    <Content Include="Imagens\logo.gif" />
+    <Content Include="Log.aspx" />
+    <Content Include="Page\Bcc.aspx" />
+    <Content Include="Page\Funcionario.aspx" />
+    <Content Include="Imagens\add.png" />
+    <Content Include="Imagens\edit.png" />
+    <Content Include="Imagens\Carousel 02.jpg" />
+    <Content Include="Imagens\remov - Cópia.png" />
+    <Content Include="Page\Content\bootstrap-theme.css.map" />
+    <Content Include="Page\Content\bootstrap-theme.min.css.map" />
+    <Content Include="Page\Content\bootstrap.css.map" />
+    <Content Include="Page\Content\bootstrap.min.css.map" />
+    <Content Include="Page\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Page\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Page\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Page\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Page\Home.aspx" />
+    <Content Include="Page\Scripts\jquery-1.9.1.min.map" />
+    <Content Include="Testando\WebForm1.aspx" />
+    <Content Include="Page\CursosMaster.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Page\Consulta.aspx" />
+    <Content Include="Page\Content\bootstrap-theme.css" />
+    <Content Include="Page\Content\bootstrap-theme.min.css" />
+    <Content Include="Page\Content\bootstrap.css" />
+    <Content Include="Page\Content\bootstrap.min.css" />
+    <Content Include="Page\Detalhes.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Page\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Page\Scripts\bootstrap.js" />
+    <Content Include="Page\Scripts\bootstrap.min.js" />
+    <None Include="Page\Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Page\Scripts\jquery-1.9.1.js" />
+    <Content Include="Page\Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Code\Camadas\BLL\Aluno.cs" />
+    <Compile Include="App_Code\Camadas\BLL\Funcionario.cs" />
+    <Compile Include="App_Code\Camadas\BLL\Avaliacao.cs" />
+    <Compile Include="App_Code\Camadas\BLL\Curso.cs" />
+    <Compile Include="App_Code\Camadas\DAL\Avaliacao.cs" />
+    <Compile Include="App_Code\Camadas\DAL\Conexao.cs" />
+    <Compile Include="App_Code\Camadas\DAL\Curso.cs" />
+    <Compile Include="App_Code\Camadas\DAL\Aluno.cs" />
+    <Compile Include="App_Code\Camadas\DAL\Funcionario.cs" />
+    <Compile Include="App_Code\Camadas\MODEL\Aluno.cs" />
+    <Compile Include="App_Code\Camadas\MODEL\Funcionario.cs" />
+    <Compile Include="App_Code\Camadas\MODEL\Avaliacao.cs" />
+    <Compile Include="App_Code\Camadas\MODEL\Curso.cs" />
+    <Compile Include="Cadastrar.aspx.cs">
+      <DependentUpon>Cadastrar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cadastrar.aspx.designer.cs">
+      <DependentUpon>Cadastrar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Tiaspx.aspx.cs">
+      <DependentUpon>Tiaspx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\Tiaspx.aspx.designer.cs">
+      <DependentUpon>Tiaspx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Testando\Inicio.aspx.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Testando\Inicio.aspx.designer.cs">
+      <DependentUpon>Inicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Testando\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Testando\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Cadastro.aspx.cs">
+      <DependentUpon>Cadastro.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\Cadastro.aspx.designer.cs">
+      <DependentUpon>Cadastro.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Log.aspx.cs">
+      <DependentUpon>Log.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Log.aspx.designer.cs">
+      <DependentUpon>Log.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Bcc.aspx.cs">
+      <DependentUpon>Bcc.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\Bcc.aspx.designer.cs">
+      <DependentUpon>Bcc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\CursosMaster.Master.cs">
+      <DependentUpon>CursosMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\CursosMaster.Master.designer.cs">
+      <DependentUpon>CursosMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Testando\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Testando\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Funcionario.aspx.cs">
+      <DependentUpon>Funcionario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\Funcionario.aspx.designer.cs">
+      <DependentUpon>Funcionario.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Consulta.aspx.cs">
+      <DependentUpon>Consulta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\Consulta.aspx.designer.cs">
+      <DependentUpon>Consulta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\Detalhes.aspx.cs">
+      <DependentUpon>Detalhes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\Detalhes.aspx.designer.cs">
+      <DependentUpon>Detalhes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Report1.rdlc" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51767</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51767/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
